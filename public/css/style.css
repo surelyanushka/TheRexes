@@ -1,0 +1,234 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif; }
+
+.body{
+  overflow-x: hidden;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.7)!important;
+}
+
+
+.navbar-nav li{
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: 0.8rem;
+}
+
+/* Carousel */
+.carousel-item{
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 41%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem rgb(53, 53, 53);
+  padding-bottom: 1.6rem;
+}
+
+.carousel-caption h3{
+  font-size: 2rem;
+  text-shadow:.1rem .1rem .5rem black ;
+  
+}
+
+.btn-lg{
+  border-width: medium;
+  font-size: 1.1rem;
+}
+
+/* Carousel Style ends */
+
+.narrow {
+  width: 75%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10rem;
+}
+
+/* Anout us 2 */
+.extra-about{
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.extra-div{
+  background: white;
+  border: medium none;
+  padding: 50px!important;
+  border-radius: 3px;
+  transition: 0.2s;
+  text-align: center;
+  margin-bottom: 50px;
+}
+ .extra-div h2{
+  margin: 20px 0 15px 0;
+  font-size: 1.4rem;
+  font-weight:bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+
+.extra-div:hover{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px)
+} 
+
+/* Cardsssss our team */
+.sect{
+  padding: 10rem 0;
+  background-color: white;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+  content:"";
+  width: 10rem;
+  height: 0.8rem;
+  background-color: rgb(71, 71, 71);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 24rem;
+  background-color: #ebeef8;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card .card-img{
+  width: 100%;
+  height: 20rem;
+  /* object-fit: cover; */
+}
+
+.profile-img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -10rem;
+  z-index: 999;
+  border: 0.8rem solid white;
+}
+
+.card h1{
+  font-size: 1.5rem;
+  color: rgb(31, 29, 29);
+  margin: 1rem 0;
+}
+
+.job{
+  color: #777;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.descript{
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+.social-media{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem 0;
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.footer{
+  background-color: rgb(27, 27, 27);
+  margin-top: 30px;
+}
+
+.footer-box{
+  margin-top: 30px;
+}
+
+
+@media screen and (min-width: 700px){
+  .card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin: 5rem;
+  }
+
+}
+
+
+/*for Gutter */
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+/*Carousel*/
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+ 
+}
