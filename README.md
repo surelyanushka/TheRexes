@@ -1,3 +1,4 @@
 # TheRexes
 Static Website
-Click here:
+Click here:  
+https://surelyanushka.github.io/TheRexes/
